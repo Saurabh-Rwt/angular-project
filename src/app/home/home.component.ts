@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Message} from '../appService/message.service'
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  btnClick(){
+    const msgService = new Message;
+    msgService.msgAlert();
+  }
 }
